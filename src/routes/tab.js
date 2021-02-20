@@ -15,24 +15,12 @@ const Tab = () => {
             inactiveTintColor: 'green',
             labelStyle: {fontSize: 30}
             }}>
-            <tab.Screen name="Home" component={Home} options={{
-                tabBarLabel: 'Home',
-                tabBarIcon: ({ color, size }) => (
-                    <MaterialCommunityIcons name="home" color={color} size={size} />
-                ),}}
+            <tab.Screen name="Home" component={Home}
             />
             
-            <tab.Screen name="Login" component={Login} options={{
-                tabBarLabel: 'Login',
-                tabBarIcon: ({ color, size }) => (
-                    <MaterialCommunityIcons name="key" color={color} size={size} />
-                ),}}/>
+            <tab.Screen name="Login" component={Login}/>
 
-            <tab.Screen name="Busca" component={Busca} options={{
-                tabBarLabel: 'Busca',
-                tabBarIcon: ({ color, size }) => (
-                    <MaterialCommunityIcons name="map-marker" color={color} size={size} />
-                ),}}/>
+            <tab.Screen name="Busca" component={Busca}/>
         </tab.Navigator>
     )
 }

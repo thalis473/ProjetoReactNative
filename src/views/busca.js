@@ -6,21 +6,23 @@ import CardProdutos from '../components/cardBusca';
 const Busca = (props) => {
     
     const dados = [
-        {
+        {   
+            id: Math.random(),
             categoria: "fogao",
             imagem: "/produtos_img/fogao.jpg",
             descricao: "Fogão 5 Bocas Mueller Decorato Acendimento",
             preco: 1559.99,
             precoFinal: 1424.91
         },
-        {
+        {   id: Math.random(),
             categoria: "geladeira",
             imagem: "/produtos_img/geladeira.jpg",
             descricao: "Geladeira/Refrigerador Brastemp Frost Free Du",
             preco: 2799,
             precoFinal: 2399.1
         },
-        {
+        {   
+            id: Math.random(),
             categoria: "liquidificador",
             imagem: "/produtos_img/liquidificador.jpg",
             descricao: "Liquidificador Philco PH900 2L Preto com Filt",
@@ -28,7 +30,7 @@ const Busca = (props) => {
             precoFinal: 109
         },
         {
-            
+            id: Math.random(),
             categoria: "maquina de lavar",
             imagem: "/produtos_img/maquina_de_lavar.jpg",
             descricao: "Lavadora de Roupas Electrolux 8.5KG",
@@ -36,7 +38,7 @@ const Busca = (props) => {
             precoFinal: 1.273
         },
         {
-            
+            id: Math.random(),
             categoria: "cafeteira",
             imagem: "/produtos_img/cafeteira.jpg",
             descricao: "Cafeteira Elétrica Britânia CP15 Xícaras",
@@ -44,7 +46,7 @@ const Busca = (props) => {
             precoFinal: 97.00
         },
         {
-            
+            id: Math.random(),
             categoria: "ventilador",
             imagem: "/produtos_img/ventilador.jpg",
             descricao: "Ventilador de Mesa Arno Silence Repelente Líq",
@@ -52,7 +54,7 @@ const Busca = (props) => {
             precoFinal: 270.00
         },
         {
-            
+            id: Math.random(),
             categoria: "torradeira",
             imagem: "/produtos_img/torradeira.jpg",
             descricao: "Torradeira Lenoxx PTR 203 2 Fatias",
@@ -60,7 +62,7 @@ const Busca = (props) => {
             precoFinal: 69.00
         },
         {
-        
+            id: Math.random(),
             categoria: "tv",
             imagem: "/produtos_img/televisao.jpg",
             descricao: "Smart TV LED PRO 43''Full HD LG 43LM 631 3",
@@ -68,7 +70,7 @@ const Busca = (props) => {
             precoFinal: 2199.4
         },
         {
-        
+            id: Math.random(),
             categoria: "microondas",
             imagem: "/produtos_img/microondas.webp",
             descricao: "Electrolux MT30S 20",
@@ -76,7 +78,7 @@ const Busca = (props) => {
             precoFinal: 270.00
         },
         {
-            
+            id: Math.random(),
             categoria: "impressora",
             imagem: "/produtos_img/impressora.webp",
             descricao: "Impressora Tanque de Tinta Epson",
@@ -84,7 +86,7 @@ const Busca = (props) => {
             precoFinal: 478.00
         },
         {
-        
+            id: Math.random(),
             categoria: "radio",
             imagem: "/produtos_img/radio.webp",
             descricao: "Radio Britania",
@@ -92,7 +94,7 @@ const Busca = (props) => {
             precoFinal: 469.00
         },
         {
-        
+            id: Math.random(),
             categoria: "arcondicionado",
             imagem: "/produtos_img/microondas.webp",
             descricao: "Ar-Condicionado Split Samsung Digital",
@@ -104,8 +106,7 @@ const Busca = (props) => {
         <View style={styles.container}>
             <Image  style={styles.logo} source={require('../img/logo1.jpeg')}/>
  
-                <Text style={styles.label}>Buscar</Text>
-                <TextInput style={styles.input} placeholder="buscar" />
+                
                     
                  <FlatList 
                     data={dados}

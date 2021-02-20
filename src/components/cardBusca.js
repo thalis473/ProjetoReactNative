@@ -1,12 +1,12 @@
 import React from 'react';
-import { Text, View, FlatList, StyleSheet, Image} from "react-native";
+import { Text, View, StyleSheet, Image} from "react-native";
 
 const CardProdutos = (props) =>{
     return (
             <View style={styles.cardbusca}>
-               
-                <Text>Nome: {props.data.nome}</Text>                
-                <Text>Descrição{props.data.descricao}</Text>
+              
+                <Text>Nome: {props.data.categoria}</Text>                
+                <Text>Descrição: {props.data.descricao}</Text>
                 <Text>Preço:{props.data.preco}</Text>
                 <Text>Preço:{props.data.precoFinal}</Text>  
                  
